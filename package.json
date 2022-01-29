@@ -1,0 +1,19 @@
+{
+  "name": "gdsc-task",
+  "version": "1.0.0",
+  "description": "Login page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aurora-0025",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "better-sqlite3": "^7.5.0",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "quick.db": "^7.1.3"
+  }
+}

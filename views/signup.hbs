@@ -1,0 +1,16 @@
+<div class="signup-container">
+    <h2>Create an account</h2>
+    <form action="/signup" method="post">
+        <div class="signup-input-fields">
+            <b>EMAIL</b>
+            <input type="email" name="email">
+            <b>USERNAME</b>
+            <input type="text" name="username">
+            <b>PASSWORD</b>
+            <input type="password" name="password">
+        </div>
+    {{!-- <button onclick="location.href = '/dashboard';">Signup</button> --}}
+        <button type="submit" value="Sign Up">Signup</button>
+    </form>
+    <a href="/login">Already have an account</a>
+</div>
