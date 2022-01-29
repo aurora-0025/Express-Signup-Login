@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 const router = require('./routes/router.js')
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
@@ -18,6 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 app.use('/',router) //middleware to call all routes
 
-app.listen(port, () => {
-    console.log(`GDSC task is now listening on port ${port}`)
-})
+
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
